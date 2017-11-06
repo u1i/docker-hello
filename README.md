@@ -23,8 +23,11 @@ e.g. modify index.html in the app directory
 ## 4: Tag Container and push to Dockerhub
 
 `docker tag <IMAGE_ID> <YOUR_USERNAME>/hello:<VERSION_NUMBER>`
+
 `docker tag <IMAGE_ID> <YOUR_USERNAME>/hello:latest`
+
 `docker push <YOUR_USERNAME>/hello:<VERSION_NUMBER>`
+
 `docker push <YOUR_USERNAME>/hello:latest`
 
 ## 5: Run Container
