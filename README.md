@@ -32,4 +32,4 @@ e.g. modify index.html in the app directory
 
 ## 5: Run Container
 
-`docker run -d -p 8080:8080 <YOUR_USERNAME>/hellox>'
+`docker run -d -p 8080:8080 <YOUR_USERNAME>/hellox>`
