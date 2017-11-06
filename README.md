@@ -18,7 +18,7 @@ e.g. modify index.html in the app directory
 
 ## 3: Build Container
 
-`docker build .` -- take note of the new IMAGE_ID
+`docker build .`  (take note of the new IMAGE_ID)
 
 ## 4: Tag Container and push to Dockerhub
 
