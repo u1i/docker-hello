@@ -26,6 +26,8 @@ e.g. modify index.html in the app directory
 
 `docker tag <IMAGE_ID> <YOUR_USERNAME>/hello:latest`
 
+`docker login`
+
 `docker push <YOUR_USERNAME>/hello:<VERSION_NUMBER>`
 
 `docker push <YOUR_USERNAME>/hello:latest`
