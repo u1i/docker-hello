@@ -1,6 +1,6 @@
 # Hello World Docker Container
 
-pushed to https://hub.docker.com/r/u1ih/hello
+pushed to https://hub.docker.com/r/u1ih/hello and gcr.io/ulihitzel/hello:latest
 
 Run with:
 
