@@ -14,7 +14,7 @@ Steps:
 
 ## 2: Make changes
 
-e.g. modify index.html in the app directory
+modify index.html in the app directory
 
 ## 3: Build Container
 
