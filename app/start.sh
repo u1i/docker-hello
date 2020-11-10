@@ -1,3 +1,6 @@
 cd /tmp
-echo "<hr>Running on $(hostname)" >> index.html
+mkdir www
+cp index.html www
+echo "<hr>Running on $(hostname)" >> www/index.html
+cd www
 python -m SimpleHTTPServer 8080
