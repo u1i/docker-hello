@@ -19,13 +19,25 @@ modify index.html in the app directory
 
 ## 3: Build Container
 
-`docker build .`  (take note of the new IMAGE_ID)
+`docker build . -t myhello`
 
-## 4: Tag Container and push to Dockerhub
+## 4: Run Container
 
-`docker tag <IMAGE_ID> <YOUR_USERNAME>/hello:<VERSION_NUMBER>`
+`docker run -d -p 8080:8080 myhello`
 
-`docker tag <IMAGE_ID> <YOUR_USERNAME>/hello:latest`
+If you can an error message, you may have another (the previous?) container running on the same port. In this case use this command to kill all running containers:
+
+`docker kill $(docker ps -q)`
+
+and then try again :-)
+
+## 5: Optional: Publish to Dockerhub
+
+For this you need to sign up at https://hub.docker.com/ – and get a little familiar with it as well. If you're completely new to this, please ignore this part for now.
+
+`docker tag myhello <YOUR_USERNAME>/hello:<VERSION_NUMBER>`
+
+`docker tag myhello <YOUR_USERNAME>/hello:latest`
 
 `docker login`
 
@@ -33,6 +45,3 @@ modify index.html in the app directory
 
 `docker push <YOUR_USERNAME>/hello:latest`
 
-## 5: Run Container
-
-`docker run -d -p 8080:8080 <YOUR_USERNAME>/hello`
