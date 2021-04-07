@@ -19,6 +19,9 @@ modify index.html in the app directory
 
 ## 3: Build Container
 
+change into the directory:
+'cd docker- hello'
+
 `docker build . -t myhello`
 
 ## 4: Run Container
