@@ -28,7 +28,7 @@ change into the directory:
 
 `docker run -d -p 8080:8080 myhello`
 
-If you can an error message, you may have another (the previous?) container running on the same port. In this case use this command to kill all running containers:
+If you see an error message, you may have another (the previous?) container running on the same port. In this case use this command to kill all running containers:
 
 `docker kill $(docker ps -q)`
 
